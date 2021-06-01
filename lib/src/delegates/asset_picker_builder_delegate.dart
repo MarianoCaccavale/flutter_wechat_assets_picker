@@ -1094,7 +1094,7 @@ class DefaultAssetPickerBuilderDelegate
         splashFactory: InkSplash.splashFactory,
         onTap: () {
           //Mariano.py
-          Log.i('Mariano.py', 'ho premuto l\'inkwell');
+          print('Mariano.py - ho premuto l\'inkwell');
           provider.switchPath(pathEntity);
           gridScrollController.jumpTo(0);
         },
