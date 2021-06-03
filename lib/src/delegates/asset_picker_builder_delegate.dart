@@ -711,9 +711,8 @@ class DefaultAssetPickerBuilderDelegate
       key: ValueKey<String>(asset.id),
       children: <Widget>[
         builder,
-        if (!isWeChatMoment || asset.type != AssetType.video){
-          selectIndicator(context, asset),
-        }
+        if (!isWeChatMoment || asset.type != AssetType.video)
+          return selectIndicator(context, asset),
       ],
     );
   }
