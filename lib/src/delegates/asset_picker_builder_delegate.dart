@@ -712,7 +712,7 @@ class DefaultAssetPickerBuilderDelegate
       children: <Widget>[
         builder,
         if (!isWeChatMoment || asset.type != AssetType.video)
-          return selectIndicator(context, asset),
+          selectIndicator(context, asset),
       ],
     );
   }
