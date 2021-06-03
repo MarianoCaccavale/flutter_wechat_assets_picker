@@ -712,10 +712,6 @@ class DefaultAssetPickerBuilderDelegate
       children: <Widget>[
         builder,
         if (!isWeChatMoment || asset.type != AssetType.video){
-          //Mariano.py
-          //__________________________________________________
-          print('ho cliccato qualcosa Mariano.py');
-          //__________________________________________________
           selectIndicator(context, asset),
         }
       ],
