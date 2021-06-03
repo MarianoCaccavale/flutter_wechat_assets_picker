@@ -1334,7 +1334,7 @@ class DefaultAssetPickerBuilderDelegate
           final bool isSelected = provider.selectedAssets.contains(asset);
 
           if(isSelected){
-            provider.unSelectAsset(asset)
+            provider.unSelectAsset(asset);
           }else{
             provider.selectAsset(asset);
           }
