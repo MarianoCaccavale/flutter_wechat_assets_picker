@@ -711,8 +711,13 @@ class DefaultAssetPickerBuilderDelegate
       key: ValueKey<String>(asset.id),
       children: <Widget>[
         builder,
-        if (!isWeChatMoment || asset.type != AssetType.video)
+        if (!isWeChatMoment || asset.type != AssetType.video){
+          //Mariano.py
+          //__________________________________________________
+          print('ho cliccato qualcosa Mariano.py');
+          //__________________________________________________
           selectIndicator(context, asset),
+        }
       ],
     );
   }
