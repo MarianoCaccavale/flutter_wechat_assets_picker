@@ -1331,7 +1331,13 @@ class DefaultAssetPickerBuilderDelegate
           //Mariano.py
           //__________________________________________________________________
           print('provo a selezionare l\'asset in selectedBackdrop');
-          provider.selectAsset(asset);
+          final bool isSelected = provider.selectedAssets.contains(asset);
+
+          if(isSelected){
+            provider.unSelectAsset(asset)
+          }else{
+            provider.selectAsset(asset);
+          }
           print('Cliccato sull\'onTap in selectedBackdrop');
           /*final List<AssetEntity>? result =
               await AssetPickerViewer.pushToViewer(
