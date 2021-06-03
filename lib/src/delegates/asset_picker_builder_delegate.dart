@@ -1328,6 +1328,9 @@ class DefaultAssetPickerBuilderDelegate
             _selected = provider.selectedAssets;
             _index = index;
           }
+          //Mariano.py
+          //__________________________________________________________________
+          print('Cliccato sull\'onTap in selectedBackdrop');
           final List<AssetEntity>? result =
               await AssetPickerViewer.pushToViewer(
             context,
@@ -1343,6 +1346,7 @@ class DefaultAssetPickerBuilderDelegate
           if (result != null) {
             Navigator.of(context).pop(result);
           }
+          //__________________________________________________________________
         },
         child: Selector<DefaultAssetPickerProvider, List<AssetEntity>>(
           selector: (_, DefaultAssetPickerProvider p) => p.selectedAssets,
